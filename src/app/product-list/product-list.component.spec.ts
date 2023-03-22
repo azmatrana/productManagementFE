@@ -8,21 +8,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { of } from 'rxjs';
 import { ProductService } from '../shared/product.service';
-import { ProdutcListComponent } from './produtc-list.component';
+import { ProductListComponent } from './product-list.component'
 import { AddProductComponent } from '../add-product/add-product.component';
 
-describe('ProdutcListComponent', () => {
-  let component: ProdutcListComponent;
+describe('ProductListComponent', () => {
+  let component: ProductListComponent;
   let productService: ProductService;
-  let fixture: ComponentFixture<ProdutcListComponent>;
+  let fixture: ComponentFixture<ProductListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProdutcListComponent ]
+      declarations: [ ProductListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProdutcListComponent);
+    fixture = TestBed.createComponent(ProductListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
